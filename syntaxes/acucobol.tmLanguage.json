@@ -1,0 +1,10 @@
+{
+	"scopeName": "customAcucobol.injection",
+	"injectionSelector": "L:source.acucobol",
+	"patterns": [
+		{
+			"match" :"(.*\\$(IF\\sXTOTEMX\\sDEFINED|IF\\sXLSCX\\sDEFINED|END).*)",
+			"name" : "comment.block.preprocessor.cobol"
+		}
+	]
+}

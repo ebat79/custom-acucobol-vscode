@@ -1,0 +1,36 @@
+{
+  "name": "custom-acucobol-vscode",
+  "displayName": "Custom AcuCOBOL",
+  "description": "Custom AcuCOBOL syntax extension for Visual Studio Code",
+  "version": "0.0.1",
+  "publisher": "EnricoBattiston",
+  "license": "MIT",
+  "homepage": "https://github.com/ebat79/custom-acucobol-vscode.git/README.md",
+  "bugs": {
+    "url": "https://github.com/ebat79/custom-acucobol-vscode/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ebat79/custom-acucobol-vscode.git"
+  },
+  "engines": {
+    "vscode": "^1.31.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "path": "./syntaxes/acucobol.tmLanguage.json",
+        "scopeName": "customAcucobol.injection",
+        "injectTo": [
+          "source.acucobol"
+        ]
+      }
+    ]
+  },
+  "extensionDependencies": [
+    "bitlang.cobol"
+  ]
+}
