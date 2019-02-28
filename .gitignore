@@ -1,0 +1,6 @@
+.cache-images
+.cache-loader
+dist
+node_modules
+*.vsix
+vsc-extension-quickstart.md
